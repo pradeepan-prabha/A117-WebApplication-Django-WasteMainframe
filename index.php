@@ -35,6 +35,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- <meta http-equiv="refresh" content="30"> -->
     <title>Zero Waste City</title>
     <meta name="description" content="A high-quality &amp; free Bootstrap admin dashboard template pack that comes with lots of templates and components.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -42,6 +43,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" id="main-stylesheet" data-version="1.1.0" href="styles/shards-dashboards.1.1.0.min.css">
+    <link href="/assets/css/material-kit.min.css?v=2.2.0" rel="stylesheet" />
     <link rel="stylesheet" href="styles/extras.1.1.0.min.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>    
     <style>
@@ -55,7 +57,7 @@
       }
 
       #barChart, #multiLineChart, #pieChart, #lineChart {
-        height: 350px;
+        height: 400px;
         margin: 5px;
       }
     </style>
@@ -144,9 +146,9 @@
               <div class="container">
                   <div class="row">
                       <div id="barChart" class="col-lg-12 shadow-lg rounded"></div>
-                      <div id="lineChart" class="col-lg-6 shadow-lg rounded"></div>
-                      <div id="pieChart" class="col-lg-6 shadow-lg rounded"></div>
                       <div id="lineChart" class="col-lg-12 shadow-lg rounded"></div>
+                      <div id="pieChart" class="col-lg-12 shadow-lg rounded"></div>
+                      <!-- <div id="lineChart" class="col-lg-12 shadow-lg rounded"></div> -->
                   </div>
               </div>
   
@@ -178,7 +180,7 @@
 
     <!-- Google Map API -->
     <script src="scripts/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT91p-SFz3zFeyYrGYz7sF6KiwGgheQtk&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhDoMmm8hJNWr0XRFSMGN2T5spmJSqegQ&callback=initMap"
     async defer></script>
 
     <!-- Graphs -->
