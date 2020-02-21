@@ -146,15 +146,15 @@
               </div>
               
               <!-- Chart Boxes -->
-              <div class="container">
-                  <div id="barChart"></div>
-  
-                  <div id="multiLineChart"></div>
-                  
-                  <div id="pieChart"></div>
-  
-                  <div id="lineChart"></div>
+              <div class="container row">
+                  <div id="barChart" class="col-lg-6"></div>
+                  <div id="multiLineChart" class="col-lg-6"></div>
               </div>
+  
+                  
+                  <!-- <div id="pieChart"></div>
+  
+                  <div id="lineChart"></div> -->
 
               </div>
             </div>
@@ -186,7 +186,7 @@
 
     <!-- Graphs -->
     <script src="scripts/canvasjs.min.js"></script>
-    <script src="scripts/barGraph.js"></script>
+    <script src="scripts/graphs.js"></script>
 
   </body>
 </html>
