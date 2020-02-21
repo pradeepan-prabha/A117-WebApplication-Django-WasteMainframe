@@ -54,14 +54,9 @@
         display: none;
       }
 
-      #barChart {
-        height: 500px;
-        border: 5px solid red;
-      }
-
-      #multiLineChart{
-        height: 500px;
-        border: 5px solid blue;
+      #barChart, #multiLineChart, #pieChart, #lineChart {
+        height: 350px;
+        margin: 5px;
       }
     </style>
   </head>
@@ -146,15 +141,17 @@
               </div>
               
               <!-- Chart Boxes -->
-              <div class="container row">
-                  <div id="barChart" class="col-lg-6"></div>
-                  <div id="multiLineChart" class="col-lg-6"></div>
+              <div class="container">
+                  <div class="row">
+                      <div id="barChart" class="col-lg-12 shadow-lg rounded"></div>
+                      <div id="lineChart" class="col-lg-6 shadow-lg rounded"></div>
+                      <div id="pieChart" class="col-lg-6 shadow-lg rounded"></div>
+                      <div id="lineChart" class="col-lg-12 shadow-lg rounded"></div>
+                  </div>
               </div>
   
                   
-                  <!-- <div id="pieChart"></div>
   
-                  <div id="lineChart"></div> -->
 
               </div>
             </div>
@@ -162,7 +159,7 @@
           
           <footer class="col-lg main-footer d-flex p-2 px-3 bg-white border-top">
             <span class="copyright ml-auto my-auto mr-2">Copyright © 2020
-              <a href="#" rel="nofollow">Mind Blender</a>
+              <a href="#" rel="nofollow">Mind Bender</a>
             </span>
           </footer>
       </div>

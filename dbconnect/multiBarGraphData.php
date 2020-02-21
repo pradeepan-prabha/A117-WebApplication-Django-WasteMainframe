@@ -10,7 +10,7 @@
         die ('Can\'t use db : ' . mysqli_error());
     }
 
-    $query = "select loc.country, count(*) from waste_details w inner join waste_product_details p on w.refid = p.refid inner join waste_location_details loc on loc.refid = p.refid group by loc.country;";
+    $query = "select loc.country, count(*) from waste_details w inner join waste_product_details p on w.refid = p.refid inner join waste_location_details loc on loc.refid = p.refid group by w.waste_char;";
 
     function percentCal($value, $total){
         $ans = ($value / $total) * 100;
