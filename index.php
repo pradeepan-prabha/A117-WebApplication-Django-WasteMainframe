@@ -55,7 +55,7 @@
       }
     </style>
   </head>
-  <body class="h-100">
+  <body class="h-100 bg-light">
     <div class="container">
       <div class="row">
           <!-- / .main-navbar -->
