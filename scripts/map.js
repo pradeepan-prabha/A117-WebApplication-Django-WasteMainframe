@@ -88,3 +88,4 @@ function initMap() {
     request.send(null);
   }
 
+  function doNothing(){ }

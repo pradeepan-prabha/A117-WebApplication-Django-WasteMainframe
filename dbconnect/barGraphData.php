@@ -23,12 +23,5 @@
     }
 
     print json_encode($data, JSON_NUMERIC_CHECK);
-
-// //now print the data
-//     $saveJSON = fopen('json/barGraph.json', 'w');
-//     fwrite($saveJSON, json_encode($data));
-//     fclose($saveJSON);
-
-//     echo "success";
-
+    
 ?>

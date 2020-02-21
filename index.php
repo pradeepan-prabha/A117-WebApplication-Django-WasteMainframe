@@ -53,23 +53,24 @@
       button[data-toggle="modal"] {
         display: none;
       }
+
+      #barChart {
+        height: 500px;
+        border: 5px solid red;
+      }
+
+      #multiLineChart{
+        height: 500px;
+        border: 5px solid blue;
+      }
     </style>
   </head>
-  <body class="h-100 bg-light">
+  <body class="h-100">
     <div class="container">
       <div class="row">
-          <!-- / .main-navbar -->
-          <div class="main-content-container container-fluid px-4">
-            <!-- Page Header -->
-            <div class="page-header row no-gutters py-4">
-              <div class="col-lg-12 col-sm-4 text-center text-sm-left mb-0">
-                <h3 class="page-title">Waste City Management System</h3>
-              </div>
-            </div>
-            <!-- End Page Header -->
+
             
             <!-- Total Count  -->
-            <div class="row">
               <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
                 <div class="stats-small stats-small--1 card card-small">
                   <div class="card-body p-0 d-flex">
@@ -122,8 +123,8 @@
                   </div>
                 </div>
               </div>
-            
-    </div>
+            </div>
+            <!-- End Small Stats Blocks -->
 
             <!-- Google Maps Starts here -->
             <div class="row">
@@ -136,6 +137,34 @@
             </div>
           <!-- Google Maps ends here -->
 
+            <div class="row">
+              <!-- Users Stats -->
+              <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+                <div class="page-header no-gutters py-4">
+                    <h3 class="page-title">Graph Visualizations</h3>
+                </div>
+              </div>
+              
+              <!-- Chart Boxes -->
+              <div class="container">
+                  <div id="barChart"></div>
+  
+                  <div id="multiLineChart"></div>
+                  
+                  <div id="pieChart"></div>
+  
+                  <div id="lineChart"></div>
+              </div>
+
+              </div>
+            </div>
+          </div>
+          
+          <footer class="col-lg main-footer d-flex p-2 px-3 bg-white border-top">
+            <span class="copyright ml-auto my-auto mr-2">Copyright © 2020
+              <a href="#" rel="nofollow">Mind Blender</a>
+            </span>
+          </footer>
       </div>
     </div>
 
@@ -152,8 +181,12 @@
 
     <!-- Google Map API -->
     <script src="scripts/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhDoMmm8hJNWr0XRFSMGN2T5spmJSqegQ&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT91p-SFz3zFeyYrGYz7sF6KiwGgheQtk&callback=initMap"
     async defer></script>
+
+    <!-- Graphs -->
+    <script src="scripts/canvasjs.min.js"></script>
+    <script src="scripts/barGraph.js"></script>
 
   </body>
 </html>
