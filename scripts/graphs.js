@@ -58,7 +58,7 @@ fetch("http://localhost/zero-waste-city-demo/dbconnect/pieGraphData.php").then(f
     console.log(obj);
     var pieChart = new CanvasJS.Chart("pieChart", {
         animationEnabled: true,
-        theme: "dark1",
+        theme: "light2",
         title:{
           text: "Waste Characteristics Graph"
         },

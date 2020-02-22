@@ -12,8 +12,8 @@ function initMap() {
         Array.prototype.forEach.call(markers, function(markerElem) {
           var id = markerElem.getAttribute('id');
           var country = markerElem.getAttribute('country');
-          var rawImg =  "https://images.unian.net/photos/2019_06/1561366441-2253.JPG?0.6219850427779223";
-          var detectedImg =  "https://images.unian.net/photos/2019_06/1561366441-2253.JPG?0.6219850427779223";
+          var rawImg =  markerElem.getAttribute('img_raw_url');;
+          var detectedImg =  markerElem.getAttribute('img_processed_url');;
             var state = markerElem.getAttribute('state');
             var district = markerElem.getAttribute('district');
             var region = markerElem.getAttribute('region');
