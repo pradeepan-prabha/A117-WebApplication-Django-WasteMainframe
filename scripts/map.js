@@ -12,8 +12,10 @@ function initMap() {
         Array.prototype.forEach.call(markers, function(markerElem) {
           var id = markerElem.getAttribute('id');
           var country = markerElem.getAttribute('country');
-          var rawImg =  markerElem.getAttribute('img_raw_url');;
-          var detectedImg =  markerElem.getAttribute('img_processed_url');;
+          var rawImg =  "http://localhost/zero-waste-city-demo/scripts/raw.jpeg";
+          var detectedImg =  "http://localhost/zero-waste-city-demo/scripts/detect.jpeg";
+          console.log(rawImg);
+          console.log(detectedImg);
             var state = markerElem.getAttribute('state');
             var district = markerElem.getAttribute('district');
             var region = markerElem.getAttribute('region');
