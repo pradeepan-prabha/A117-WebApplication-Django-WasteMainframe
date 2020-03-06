@@ -1,5 +1,5 @@
 // Bar Chart
-fetch("http://localhost/zero-waste-city-demo/dbconnect/barGraphData.php").then(function(response){
+fetch("http://localhost/A117-WebApplication-WasteMainframe/dbconnect/barGraphData.php").then(function(response){
   return response.json();
 }).then(function(obj){
     console.log(obj);
@@ -14,7 +14,6 @@ fetch("http://localhost/zero-waste-city-demo/dbconnect/barGraphData.php").then(f
         },
         data: [{
           type: "column",
-          yValueFormatString: "#,##0.## tonnes",
           dataPoints: obj
         }]
     });
@@ -26,7 +25,7 @@ fetch("http://localhost/zero-waste-city-demo/dbconnect/barGraphData.php").then(f
 
 
 // Multi-Line chart 
-fetch("http://localhost/zero-waste-city-demo/dbconnect/lineGraphData.php").then(function(response){
+fetch("http://localhost/A117-WebApplication-WasteMainframe/dbconnect/multiBarGraphData.php").then(function(response){
   return response.json();
 }).then(function(obj){
     console.log(obj);
@@ -41,7 +40,6 @@ fetch("http://localhost/zero-waste-city-demo/dbconnect/lineGraphData.php").then(
         },
         data: [{
           type: "line",
-          yValueFormatString: "# %",
           dataPoints: obj
         }]
     });
@@ -52,7 +50,7 @@ fetch("http://localhost/zero-waste-city-demo/dbconnect/lineGraphData.php").then(
 });
 
 // Pie chart 
-fetch("http://localhost/zero-waste-city-demo/dbconnect/pieGraphData.php").then(function(response){
+fetch("http://localhost/A117-WebApplication-WasteMainframe/dbconnect/pieGraphData.php").then(function(response){
   return response.json();
 }).then(function(obj){
     console.log(obj);
@@ -67,7 +65,6 @@ fetch("http://localhost/zero-waste-city-demo/dbconnect/pieGraphData.php").then(f
         },
         data: [{
           type: "pie",
-          yValueFormatString: "#,##0.## %",
           dataPoints: obj
         }]
     });

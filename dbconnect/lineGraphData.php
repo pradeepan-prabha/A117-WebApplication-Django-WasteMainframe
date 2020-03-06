@@ -18,6 +18,7 @@
 
     function percentCal($value, $total){
         $ans = ($value / $total) * 100;
+        echo $ans." ";
         return $ans;
     }
 

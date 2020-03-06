@@ -236,7 +236,7 @@
 
     <!-- Google Map API -->
     <script src="scripts/map.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhDoMmm8hJNWr0XRFSMGN2T5spmJSqegQ&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT91p-SFz3zFeyYrGYz7sF6KiwGgheQtk&callback=initMap"
     async defer></script>
 
     <!-- Graphs -->

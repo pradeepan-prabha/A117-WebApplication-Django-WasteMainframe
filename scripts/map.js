@@ -6,14 +6,14 @@ function initMap() {
     var infoWindow = new google.maps.InfoWindow;
 
       // Change this depending on the name of your PHP or XML file
-      downloadUrl('http://localhost/zero-waste-city/dbconnect/convertToXML.php', function(data) {
+      downloadUrl('http://localhost/A117-WebApplication-WasteMainframe/dbconnect/convertToXML.php', function(data) {
         var xml = data.responseXML;
         var markers = xml.documentElement.getElementsByTagName('marker');
         Array.prototype.forEach.call(markers, function(markerElem) {
           var id = markerElem.getAttribute('id');
           var country = markerElem.getAttribute('country');
-          var rawImg =  "http://localhost/zero-waste-city-demo/scripts/raw.jpeg";
-          var detectedImg =  "http://localhost/zero-waste-city-demo/scripts/detect.jpeg";
+          var rawImg =  "http://localhost/A117-WebApplication-WasteMainframe/scripts/raw.jpeg";
+          var detectedImg =  "http://localhost/A117-WebApplication-WasteMainframe/scripts/detect.jpeg";
           console.log(rawImg);
           console.log(detectedImg);
             var state = markerElem.getAttribute('state');
